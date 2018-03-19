@@ -4,7 +4,7 @@ const compiler = require('./lib/compiler.js')
 const debug = require('debug')
 var log = debug('cs-plugin-bulk-compile')
 
-global.api = `http://${argv.api}`
+global.api = argv.api
 
 switch (argv.cmd) {
 	case 'bulk':
