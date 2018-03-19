@@ -1,0 +1,33 @@
+{
+	"name": "@ff0000-ad-tech/cs-plugin-bulk-compile",
+	"publishConfig": {
+		"access": "public"
+	},
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"pub": "np"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ff0000-ad-tech/cs-plugin-bulk-compile.git"
+	},
+	"author": "RED Interactive Agency",
+	"license": "MIT",
+	"devDependencies": {},
+	"dependencies": {
+		"debug": "git://github.com/gmcdev/debug.git",
+		"request": "^2.85.0"
+	},
+	"wp-creative-server": {
+		"routes": {
+			"api": "./index.js"
+		},
+		"hooks": {
+			"bulk-control": {
+				"Bulk Compile": "/api/?cmd=bulk"
+			}
+		}
+	}
+}
