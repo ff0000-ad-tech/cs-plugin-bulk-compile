@@ -17,7 +17,7 @@
 	"license": "MIT",
 	"devDependencies": {},
 	"dependencies": {
-		"debug": "git://github.com/gmcdev/debug.git",
+		"@ff0000-ad-tech/debug": "latest",
 		"request": "^2.85.0"
 	},
 	"wp-creative-server": {
