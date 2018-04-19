@@ -15,7 +15,14 @@
 	},
 	"author": "RED Interactive Agency",
 	"license": "MIT",
-	"devDependencies": {},
+	"devDependencies": {
+		"babel-eslint": "^8.2.1",
+		"eslint": "^4.16.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.5.0",
+		"np": "^2.19.0",
+		"prettier": "^1.10.2"
+	},
 	"dependencies": {
 		"@ff0000-ad-tech/debug": "latest",
 		"request": "^2.85.0"
