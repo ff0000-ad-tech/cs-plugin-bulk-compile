@@ -1,44 +1,43 @@
 {
-	"name": "@ff0000-ad-tech/cs-plugin-bulk-compile",
-	"publishConfig": {
-		"access": "public"
-	},
-	"version": "1.0.1",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"pub": "np"
-	},
-	"engines": {
-		"node": ">=9.8.0",
-		"npm": ">=6.0.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ff0000-ad-tech/cs-plugin-bulk-compile.git"
-	},
-	"author": "RED Interactive Agency",
-	"license": "MIT",
-	"devDependencies": {
-		"babel-eslint": "^8.2.1",
-		"eslint": "^4.16.0",
-		"eslint-config-prettier": "^2.9.0",
-		"eslint-plugin-prettier": "^2.5.0",
-		"np": "^2.19.0",
-		"prettier": "^1.10.2"
-	},
-	"dependencies": {
-		"@ff0000-ad-tech/debug": "latest",
-		"request": "^2.85.0"
-	},
-	"wp-creative-server": {
-		"routes": {
-			"api": "./index.js"
-		},
-		"hooks": {
-			"bulk-control": {
-				"Bulk Compile": "/api/?cmd=bulk"
-			}
-		}
-	}
+  "name": "@ff0000-ad-tech/cs-plugin-bulk-compile",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pub": "np"
+  },
+  "engines": {
+    "node": ">=9.8.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ff0000-ad-tech/cs-plugin-bulk-compile.git"
+  },
+  "author": "RED Interactive Agency",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "np": "^2.19.0",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@ff0000-ad-tech/debug": "latest",
+    "axios": "^0.21.1"
+  },
+  "wp-creative-server": {
+    "routes": {
+      "api": "./index.js"
+    },
+    "hooks": {
+      "bulk-control": {
+        "Bulk Compile": "/api/?cmd=bulk"
+      }
+    }
+  }
 }
